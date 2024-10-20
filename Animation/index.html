@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="icon" href="3.jpg"type="image/png">
+    <style type="text/css"media="screen">
+        body{
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            
+            
+        }
+
+        
+@media screen and (max-width:800px) {
+    body{
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            overflow: hidden;
+
+}
+
+}
+    </style>
+</head>
+<body background="1.jpg">
+    <marquee behavior="slow" direction="left">
+        <img src="birds.gif" alt="birds"width=17% scroll amount="5%">
+    </marquee>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+   <marquee behavior="" direction="left">
+    <img src="2.gif" alt=""width="18%">
+    
+    <img src="4.gif" alt=""width="21%">
+   </marquee>
+   
+   <button onclick="playAudio()">Play Audio</button>
+   <audio id="myAudio">
+       <source src="roar.mp3" type="audio/mpeg">
+       Your browser does not support the audio element.
+   </audio>
+   <script>
+       function playAudio() {
+           var audio = document.getElementById("myAudio");
+           audio.play();
+       }
+   </script>
+
